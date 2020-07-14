@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/dhaval/.config/nvim/plug-config'
+let g:netrw_dirhist_2='/home/dhaval/.config/nvim'
+let g:netrw_dirhist_1='/home/dhaval/.local/share/nvim/plugged/vim-airline/t'
+let g:netrw_dirhist_0='/home/dhaval/.local/share/nvim/plugged/vim-airline'
+let g:netrw_dirhist_9='/home/dhaval/.local/share/nvim/plugged/vim-airline/autoload/airline/extensions'
+let g:netrw_dirhist_8='/home/dhaval/.local/share/nvim/plugged/vim-airline/autoload/airline/extensions/tabline'
+let g:netrw_dirhist_7='/home/dhaval/.local/share/nvim/plugged/vim-airline/autoload/airline/extensions'
+let g:netrw_dirhist_6='/home/dhaval/.local/share/nvim/plugged/vim-airline/autoload/airline'
+let g:netrw_dirhist_5='/home/dhaval/.local/share/nvim/plugged/vim-airline/autoload'
+let g:netrw_dirhist_4='/home/dhaval/.local/share/nvim/plugged/vim-airline'
