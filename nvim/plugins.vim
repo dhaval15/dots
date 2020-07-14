@@ -18,7 +18,7 @@ Plug 'chrisbra/colorizer'
 
 Plug 'sainnhe/gruvbox-material'
 
-Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 call plug#end()
 
