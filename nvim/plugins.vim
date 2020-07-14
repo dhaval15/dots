@@ -18,6 +18,8 @@ Plug 'chrisbra/colorizer'
 
 Plug 'sainnhe/gruvbox-material'
 
+Plug 'junegunn/rainbow_parentheses.vim'
+
 Plug 'junegunn/fzf.vim'
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
