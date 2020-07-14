@@ -10,6 +10,10 @@ Plug 'natebosch/vim-lsc-dart'
 
 Plug 'dart-lang/dart-vim-plugin'
 
+Plug 'vim-pandoc/vim-pandoc'
+
+Plug 'vim-pandoc/vim-pandoc-syntax'
+
 Plug 'vim-airline/vim-airline'
 
 Plug 'mhinz/vim-startify'
