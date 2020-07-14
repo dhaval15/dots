@@ -4,7 +4,11 @@ source $HOME/.config/nvim/plug-config/init.vim
 
 source $HOME/.config/nvim/custom/init.vim
 
-let airline_theme="gruvbox_material"
+set termguicolors
+
+let g:airline_theme = 'gruvbox_material'
+
+let g:gruvbox_material_background = 'medium'
 
 colorscheme gruvbox-material
 
