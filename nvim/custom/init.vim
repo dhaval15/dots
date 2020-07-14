@@ -1,3 +1,3 @@
 "source $HOME/.config/nvim/custom/statubar.vim
-source $HOME/.config/nvim/custom/habbit.vim
-source $HOME/.config/nvim/custom/keys.vim
+source $HOME/dots/nvim/custom/habbit.vim
+source $HOME/dots/nvim/custom/keys.vim

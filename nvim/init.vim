@@ -1,8 +1,8 @@
-source $HOME/.config/nvim/plugins.vim 
+source $HOME/dots/nvim/plugins.vim 
 
-source $HOME/.config/nvim/plug-config/init.vim
+source $HOME/dots/nvim/plug-config/init.vim
 
-source $HOME/.config/nvim/custom/init.vim
+source $HOME/dots/nvim/custom/init.vim
 
 set termguicolors
 
