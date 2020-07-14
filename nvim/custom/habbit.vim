@@ -1,8 +1,8 @@
 " Remove newbie crutches in Command Mode
-cnoremap <Down> <Nop>
-cnoremap <Left> <Nop>
-cnoremap <Right> <Nop>
-cnoremap <Up> <Nop>
+"cnoremap <Down> <Nop>
+"cnoremap <Left> <Nop>
+"cnoremap <Right> <Nop>
+"cnoremap <Up> <Nop>
 
 " Remove newbie crutches in Insert Mode
 "inoremap <Down> <Nop>
