@@ -6,3 +6,4 @@ nnoremap <leader>d :bd<CR>
 nnoremap <leader>e :Files<CR>
 nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>g :GitFiles<CR>
+nnoremap <leader>m :CocAction<CR>
