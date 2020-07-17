@@ -2,6 +2,8 @@ call plug#begin(stdpath('data') . '/plugged')
 
 Plug 'tpope/vim-fugitive'
 
+Plug 'airblade/vim-gitgutter'
+
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'natebosch/vim-lsc'
