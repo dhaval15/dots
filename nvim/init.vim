@@ -4,6 +4,8 @@ source $HOME/dots/nvim/plug-config/init.vim
 
 source $HOME/dots/nvim/custom/init.vim
 
+source $HOME/dots/nvim/snippets/init.vim
+
 set termguicolors
 
 let g:airline_theme = 'gruvbox_material'
