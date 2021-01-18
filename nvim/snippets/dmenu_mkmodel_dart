@@ -1,0 +1,7 @@
+#!/bin/sh 
+# arg=$(printf "" | dmenu -p Model)
+arg=$(echo "" | vipe | cat)
+if [ "$arg" ]; then
+	code=$($HOME/.config/nvim/snippets/mkmodel_dart $arg)
+	printf "$code"
+fi

@@ -1,10 +1,12 @@
-source $HOME/dots/nvim/plugins.vim 
+source $HOME/Dev/dots/nvim/plugins.vim 
 
-source $HOME/dots/nvim/plug-config/init.vim
+source $HOME/Dev/dots/nvim/plug-config/init.vim
 
-source $HOME/dots/nvim/custom/init.vim
+source $HOME/Dev/dots/nvim/custom/init.vim
 
-source $HOME/dots/nvim/snippets/init.vim
+source $HOME/Dev/dots/nvim/snippets/init.vim
+
+source $HOME/Dev/dots/nvim/flutter/init.vim
 
 set termguicolors
 
@@ -17,3 +19,9 @@ colorscheme gruvbox-material
 set number
 
 set mouse=a
+
+set cursorline
+
+set nocompatible
+filetype plugin on
+syntax on

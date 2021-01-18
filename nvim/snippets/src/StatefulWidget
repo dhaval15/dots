@@ -1,0 +1,12 @@
+NAME
+class $NAME extends StatefulWidget {
+  @override
+  $NAMEState createState() => $NAMEState();
+}
+
+class $NAMEState extends State<$NAME> {
+  @override
+  Widget build(BuildContext context) {
+    return ;
+  }
+}

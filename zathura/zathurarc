@@ -1,0 +1,11 @@
+set selection-clipboard clipboard
+set page-padding 2
+set default-bg "#161616"
+set recolor-darkcolor "#FFDDBB"
+set recolor-lightcolor "#161616"
+set recolor
+map i recolor
+map p print
+map u scroll half-up
+map d scroll half-down
+map D toggle_page_mode

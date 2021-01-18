@@ -1,0 +1,5 @@
+DIALOG
+showDialog(
+	context:context,
+	builder:(context)=>$DIALOG(),
+);

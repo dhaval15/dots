@@ -1,0 +1,11 @@
+#!/bin/sh 
+if [ "$@" ]; then
+	code=$($HOME/.config/nvim/snippets/mkmodel_dart $@)
+	printf "$code"
+else
+	read arg
+	code=$($HOME/.config/nvim/snippets/mkmodel_dart $arg)
+	printf "$code"
+fi
+
+

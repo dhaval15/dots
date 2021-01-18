@@ -1,0 +1,5 @@
+alias cat=bat
+alias ls=exa
+alias ll='exa -l'
+alias la='exa -l -a'
+alias lt='exa -T'

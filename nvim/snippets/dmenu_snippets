@@ -1,0 +1,15 @@
+#!/bin/sh 
+SNIPPET_PATH="$HOME/.config/nvim/snippets/src"
+snippet=$(ls "$SNIPPET_PATH" | dmenu -p Snippets -l 10 -g 1 -c -cw 400 -bw 2 -i)
+if [ "$snippet" ]; then
+	snippet_code=$(sed -n '2,$p' "$SNIPPET_PATH/$snippet")
+	args=$(sed -n '1p' "$SNIPPET_PATH/$snippet" | tr ',' '\n')
+	for arg in $args
+	do
+		arg_value=$(printf ""| dmenu -p "$arg")
+		if [ "$arg_value" ]; then
+			snippet_code=$(echo "$snippet_code" | sed "s/\$$arg/$arg_value/g")
+		fi
+	done
+	printf "$snippet_code"
+fi

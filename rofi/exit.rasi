@@ -1,0 +1,59 @@
+/**
+ * ROFI theme: AWEL 
+ * User: Wangz
+ * Copyright: Dave Davenport
+ */
+
+configuration {
+    display-find:                   "";
+    columns:1;
+    lines:5;
+}
+
+
+* {
+    background-color:  #00000080;
+    text-color: #ff443a;
+    orientation: horizontal;
+    font:                      "Sauce Code Pro Nerd Font 16";
+}
+
+#window {
+    padding: 0;
+    location: center;
+    height: 35%;
+    width:  20%;
+}
+
+#mainbox {
+    background-color: #262626;
+    border:  1px;
+    border-color: #ff443a77;
+    children: [listview];
+    spacing: 4px;
+    padding: 8px 8px;
+}
+
+
+#listview {
+    background-color: #e9e9e900;
+    fixed-height: 0;
+    border: 0px;
+    spacing: 4px;
+    scrollbar: false;
+    layout: vertical;
+    padding: 10px 10px 0px;
+}
+
+#element {
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    background-color: #26262600;
+    padding: 8px;
+}
+
+#element selected {
+    background-color:               #ff443a;
+    text-color:                     #262626;
+}
+

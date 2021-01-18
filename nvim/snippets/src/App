@@ -1,0 +1,13 @@
+NAME
+class $NAME extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: '$NAME',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+    );
+  }
+}
+

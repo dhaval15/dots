@@ -1,0 +1,13 @@
+NAME
+class $NAME extends InheritedWidget {
+  $NAME({Key key,Widget child}) :super(key:key,child:child);	
+
+  static of(BuildContext context) => 
+    context.findAncestorWidgetOfExactType<$NAME>();
+
+
+  @override 
+  updateShouldNotify($NAME oldWidget) {
+    return true;
+  }
+}

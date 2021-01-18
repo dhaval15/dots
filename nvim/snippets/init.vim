@@ -1,3 +1,10 @@
+nnoremap <S-s> :call SnippetOpen()<CR>
+nnoremap <S-m> :call ModelOpen()<CR>
 
-nnoremap <leader>sl diw:-1read $HOME/dots/nvim/snippets/src/stless.snip<CR>f$"_deP/return<CR>f;i
+function! SnippetOpen()
+  read !$HOME/.config/nvim/snippets/dmenu_snippets
+endfunction
 
+function! ModelOpen()
+  read !$HOME/.config/nvim/snippets/dmenu_mkmodel_dart
+endfunction
