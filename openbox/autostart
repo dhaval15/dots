@@ -1,5 +1,5 @@
 ## Set background image
-nitrogen --restore
+nitrogen --restore &
 
 ## Compositer
 compton --config $HOME/.config/compton.conf &
