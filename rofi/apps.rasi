@@ -6,7 +6,6 @@ configuration {
     threads:                        0;
     scroll-method:                  0;
     disable-history:                false;
-    monitor:                        "primary";
     columns:                        4;
 }
 
