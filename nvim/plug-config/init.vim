@@ -1,8 +1,8 @@
-source $HOME/Dev/dots/nvim/plug-config/airline.vim
-source $HOME/Dev/dots/nvim/plug-config/coc.vim
-source $HOME/Dev/dots/nvim/plug-config/startify.vim
-source $HOME/Dev/dots/nvim/plug-config/vim-flutter.vim
-source $HOME/Dev/dots/nvim/plug-config/rainbow-parenthesis.vim
-source $HOME/Dev/dots/nvim/plug-config/pandoc.vim
-source $HOME/Dev/dots/nvim/plug-config/git-gutter.vim
-source $HOME/Dev/dots/nvim/plug-config/floaterm.vim
+source $HOME/.config/nvim/plug-config/airline.vim
+source $HOME/.config/nvim/plug-config/coc.vim
+source $HOME/.config/nvim/plug-config/startify.vim
+source $HOME/.config/nvim/plug-config/vim-flutter.vim
+source $HOME/.config/nvim/plug-config/rainbow-parenthesis.vim
+source $HOME/.config/nvim/plug-config/pandoc.vim
+source $HOME/.config/nvim/plug-config/git-gutter.vim
+source $HOME/.config/nvim/plug-config/floaterm.vim

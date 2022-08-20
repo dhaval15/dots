@@ -1,0 +1,8 @@
+require('neovide')
+require('better-defaults')
+require('keybindings')
+require('plugins')
+require('status-line')
+require('theme')
+require('file-management')
+require('programming')

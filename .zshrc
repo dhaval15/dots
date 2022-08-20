@@ -11,13 +11,7 @@ export ZSH=/home/dhaval/.oh-my-zsh
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="spaceship" #steeef,ys,nicoulaj,af-magic
-SPACESHIP_PROMPT_ADD_NEWLINE=false
-SPACESHIP_PROMPT_SEPARATE_LINE=false
-SPACESHIP_PROMPT_PREFIXES_SHOW=false
-SPACESHIP_CONDA_SHOW=false
-SPACESHIP_CHAR_SYMBOL="→ "
-#SPACESHIP_PYENV_SHOW=false
+ZSH_THEME="nicoulaj" #steeef,ys,nicoulaj,af-magic
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -80,7 +74,6 @@ SPACESHIP_CHAR_SYMBOL="→ "
 plugins=(
 	git
 	extract
-	sudo
 	dotenv
 	zsh-interactive-cd
 	fzf
@@ -310,19 +303,20 @@ export LANG="en_US.UTF-8"
 #create a file called .zshrc-personal and put all your personal aliases
 #in there. They will not be overwritten by skel.
 
-export ANDROID_HOME="$HOME/Dev/packages/android"
-export ANDROID_SDK_ROOT="$HOME/Dev/packages/android"
-PATH="$PATH:$HOME/Dev/packages/flutter/bin"
-PATH="$PATH:$HOME/Dev/packages/flutter/bin/cache/dart-sdk/bin"
-PATH="$PATH:$ANDROID_HOME/cmdline-tools/tools/bin"
-PATH="$PATH":"$HOME/.pub-cache/bin"
-PATH="$PATH":"$HOME/.emacs.d/bin"
-PATH="$PATH":"$HOME/applications"
+ANDROID_HOME="$HOME/Hive/system/packages/android"
+ANDROID_SDK_ROOT="$HOME/Hive/system/packages/android"
+PATH="$PATH:$HOME/Hive/system/packages/flutter/bin"
+PATH="$PATH:$HOME/Hive/system/packages/flutter/bin/cache/dart-sdk/bin"
+PATH="$PATH:$ANDROID_HOME/tools"
+PATH="$PATH:$ANDROID_HOME/platform-tools"
+PATH="$PATH:$HOME/.pub-cache/bin"
+PATH="$PATH:$HOME/.emacs.d/bin"
+PATH="$PATH:$HOME/applications"
 export EDITOR=nvim
 export TERM=alacritty
 [[ -f ~/.zshrc-personal ]] && . ~/.zshrc-personal
 export PATH=$PATH:/home/dhaval/.dshell/bin
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
+export JAVA_HOME=/usr/lib/jvm/java-18-openjdk
 export PATH="$PATH:$HOME/.gem/ruby/2.7.0/bin"
 
 alias tmain="tmux new-session -A -s Main"
@@ -330,9 +324,9 @@ alias :G="nvim -c G"
 alias :Gco="nvim -c Gco"
 alias :Gd="git diff"
 alias c=". c"
-alias p=". p"
+alias :p=". projects"
+alias :f="flute open"
 source $HOME/scripts/.zshenv
-source $HOME/Dev/dots/shell/.aliases
 
 typeset -ag precmd_functions;
 if [[ -z ${precmd_functions[(r)_direnv_hook]} ]]; then
@@ -358,4 +352,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
