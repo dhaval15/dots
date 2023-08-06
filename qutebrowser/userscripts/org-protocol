@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+PROTOCOL="$1"
+TEMPLATE="$2"
+QUTE_URL=$(echo $QUTE_URL | python -c "import sys;from urllib.parse import quote;print(quote(sys.stdin.readline()))" | head -n 1)
+QUTE_URL=$(echo "${QUTE_URL:0:-3}")
+
+OUT="org-protocol://$PROTOCOL"
+OUT+="?"
+if [[ "$PROTOCOL" == "capture" ]];
+then
+   OUT+="template=$TEMPLATE"
+   OUT+="&"
+fi
+OUT+="title=$QUTE_TITLE&url=$QUTE_URL&body=$QUTE_SELECTED_TEXT"
+xdg-open "$OUT"
+xdo activate $(xdo id -N Emacs | head -n 1)
+awesome-client 'client.focus.screen.tags[3]:view_only()'
