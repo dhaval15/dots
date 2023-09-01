@@ -1,0 +1,10 @@
+#!/bin/sh
+BASE_SCRIPTS_DIR=$(dirname -- "$0")
+ANS=$(printf "Logout\nReboot\nShutdown" | "$BASE_SCRIPTS_DIR/bemenu_themed" -p Exit)
+case "$ANS" in
+	*Lock) dm-tool lock;;
+	*Hibernate) systemctl hibernate;;
+	*Logout) hyprctl dispatch exit;;
+	*Reboot) systemctl reboot ;;
+	*Shutdown) systemctl poweroff ;;
+esac
